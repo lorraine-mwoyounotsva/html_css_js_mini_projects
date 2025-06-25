@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #e6f4ea; /* pastel mint green background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  color: #3a4a3f; /* dark muted green text */
+}
+
+.app-wrapper {
+  background: #f5fbf7; /* very light mint white */
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 10px 25px rgba(100, 160, 110, 0.15); /* soft green shadow */
+}
+
+header h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.25rem;
+  margin-bottom: 1.5rem;
+  color: #4a6a47; /* medium forest green */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.input-block {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+  font-size: 1rem;
+  color: #69876c; /* muted green-gray */
+}
+
+input[type="number"],
+select {
+  padding: 12px 15px;
+  border-radius: 12px;
+  border: 1.5px solid #a6c3a0; /* pastel sage green border */
+  font-size: 1rem;
+  background: #ebf5ec; /* pale mint green */
+  color: #47603a; /* dark green text */
+  transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus,
+select:focus {
+  outline: none;
+  border-color: #7baa6a; /* medium sage green */
+  box-shadow: 0 0 10px rgba(123, 170, 106, 0.35);
+}
+
+button {
+  background: linear-gradient(135deg, #8fc776, #5a944d); /* soft lime to forest green gradient */
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 14px;
+  padding: 14px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  box-shadow: 0 8px 22px rgba(90, 148, 77, 0.6);
+  transform: translateY(-3px);
+}
+
+#conversion-result {
+  margin-top: 2rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-align: center;
+  color: #557a4b; /* medium muted green */
+  min-height: 2em;
+}

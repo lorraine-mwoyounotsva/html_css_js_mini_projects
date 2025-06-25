@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background: #fef6fb;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 1000px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+h1, h2 {
+  text-align: center;
+  color: #4e5d6c;
+}
+
+.balance-summary {
+  background: linear-gradient(145deg, #fbeaff, #e2f9f1);
+  padding: 2rem;
+  border-radius: 16px;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+#balance {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 1rem 0;
+  color: #2d6a4f;
+}
+
+.summary-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.summary-box {
+  padding: 1rem;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  flex: 1;
+}
+
+.summary-box h3 {
+  font-weight: 600;
+}
+
+.summary-box span {
+  font-size: 1.6rem;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.income span {
+  color: #2b9348;
+}
+
+.expenses span {
+  color: #ef476f;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.transactions ul {
+  list-style: none;
+  max-height: 300px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.transactions li {
+  background: #f3f4f6;
+  border-left: 5px solid;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.transactions li.income {
+  border-color: #2b9348;
+}
+
+.transactions li.expense {
+  border-color: #ef476f;
+}
+
+.transactions .delete-btn {
+  background: transparent;
+  border: none;
+  color: #ef476f;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.add-transaction form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button[type="submit"] {
+  background: #a8dadc;
+  color: #1d3557;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background: #457b9d;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

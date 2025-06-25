@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kanban Board</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrapper">
+    <header>
+      <h1>Simple Kanban Board</h1>
+      <form id="task-form">
+        <input
+          type="text"
+          id="new-task"
+          placeholder="Add new task to 'To Do'"
+          autocomplete="off"
+          required
+        />
+        <button type="submit">Add Task</button>
+      </form>
+    </header>
+
+    <section class="board">
+      <section class="column" id="todo-column">
+        <h2>To Do</h2>
+        <div class="task" draggable="true" id="task1">Prepare client presentation</div>
+        <div class="task" draggable="true" id="task2">Prepare Lunch</div>
+      </section>
+
+      <section class="column" id="inprogress-column">
+        <h2>In Progress</h2>
+        <div class="task" draggable="true" id="task3">Check Emails</div>
+      </section>
+
+      <section class="column" id="done-column">
+        <h2>Done</h2>
+        <div class="task" draggable="true" id="task4">Submit Report</div>
+      </section>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

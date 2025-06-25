@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="wrapper">
+      <section class="contact-section">
+        <header>
+          <h1>Get in Touch</h1>
+          <p>We’d love to hear from you. Send us a message!</p>
+        </header>
+
+        <form class="contact-form" novalidate>
+          <div class="fields-grid">
+            <label class="input-wrapper">
+              <i class="fas fa-user"></i>
+              <input type="text" name="name" placeholder="Your Name" required />
+            </label>
+
+            <label class="input-wrapper">
+              <i class="fas fa-envelope"></i>
+              <input type="email" name="email" placeholder="Your Email" required />
+            </label>
+
+            <label class="input-wrapper">
+              <i class="fas fa-phone"></i>
+              <input type="tel" name="phone" placeholder="Phone (optional)" />
+            </label>
+
+            <label class="input-wrapper">
+              <i class="fas fa-tag"></i>
+              <input type="text" name="subject" placeholder="Subject" required />
+            </label>
+          </div>
+
+          <label class="input-wrapper message-wrapper">
+            <i class="fas fa-comment-dots"></i>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+          </label>
+
+          <button type="submit" class="submit-btn">
+            <span>Send Message</span>
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+
+        <aside class="contact-details">
+          <div class="detail-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <address>456 Pastel Lane, Windhoek, Country</address>
+          </div>
+          <div class="detail-item">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:hello@pastelcontact.com">hello@contact.com</a>
+          </div>
+          <div class="detail-item">
+            <i class="fas fa-phone"></i>
+            <a href="tel:+12345678901">+274 56 807 3401</a>
+          </div>
+        </aside>
+      </section>
+    </main>
+  </body>
+</html>

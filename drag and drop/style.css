@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #e8e5f7;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 2rem;
+  color: #2e2a4a;
+}
+
+.wrapper {
+  max-width: 1100px;
+  width: 100%;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  color: #46159F; /* deep purple */
+  font-size: 2.5rem;
+  margin-bottom: 0.8rem;
+}
+
+#task-form {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+#new-task {
+  width: 300px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: 2px solid #7c6ab9; /* lighter purple */
+  border-radius: 8px;
+  background-color: #f0edfb; /* very light purple */
+  color: #3d2a6b;
+  transition: border-color 0.3s ease;
+}
+
+#new-task:focus {
+  outline: none;
+  border-color: #46159F;
+  background-color: #e3defd;
+}
+
+#task-form button {
+  background-color: #46159F;
+  color: #f3f0fd;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#task-form button:hover {
+  background-color: #6234d2;
+}
+
+/* Board styling */
+.board {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: nowrap; /* keep columns in one line on desktop */
+}
+
+.column {
+  background-color: #cfc8f7; /* pastel purple */
+  border-radius: 12px;
+  width: 32%;
+  min-height: 420px;
+  padding: 1rem;
+  box-shadow: 0 6px 15px rgba(70, 21, 159, 0.25);
+  display: flex;
+  flex-direction: column;
+}
+
+.column h2 {
+  color: #3e2f7c; /* medium purple */
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  border-bottom: 2px solid #6a52b8; /* lighter purple border */
+  padding-bottom: 0.3rem;
+}
+
+/* Task cards */
+.task {
+  background-color: #f4f2fc;
+  color: #3d2a6b;
+  padding: 1rem;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(70, 21, 159, 0.15);
+  cursor: grab;
+  user-select: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.task:active {
+  cursor: grabbing;
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(70, 21, 159, 0.3);
+}
+
+/* Drag hover */
+.column.drag-over {
+  background-color: #a99cf9;
+  border: 2px dashed #46159F;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+  .board {
+    flex-direction: column;
+  }
+
+  .column {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+}
+
