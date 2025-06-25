@@ -19,3 +19,7 @@ This is a minimal and modern 404 error page created using **HTML** and **CSS**. 
 - Writing a clean, readable HTML and CSS structure
 
 This project was a great way to practice layout techniques and communicate technical errors in a more human way. 
+
+<div align="center">
+  <img src="https://github.com/lorraine-mwoyounotsva/html_css_js_mini_projects/blob/main/404%20page/404-preview.png?raw=true" alt="404 Page Preview" width="400"/>
+</div>
