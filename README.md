@@ -18,13 +18,13 @@ No frameworks. No libraries. Just raw HTML, CSS, and JavaScript.
 
 Each folder is a self-contained project nothing too fancy, just clean, creative, and fun components that run right in the browser.
 
-| #  | Project Title                 | Live Demo                               |
-|----|-------------------------------|-----------------------------------------|
-| 01 | 404 page                      |                                         |
-| 02 | bookmark saver                |                                         |
-| 03 | color palette generator       |                                         |
-| 04 | contact form                  |                                         |
-| 05 | currency converter            |                                         |
-| 06 | drag and drop                 |                                         |
-| 07 | expense tracker               |                                         |
-| 08 | form validator                |                                         |
+| #  | Project Title                 |
+|----|-------------------------------|
+| 01 | 404 page                      |
+| 02 | bookmark saver                |
+| 03 | color palette generator       |
+| 04 | contact form                  |
+| 05 | currency converter            |
+| 06 | drag and drop                 |
+| 07 | expense tracker               |
+| 08 | form validator                |
